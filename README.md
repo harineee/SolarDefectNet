@@ -80,7 +80,7 @@ h-proj/
    Edit `scripts/run_inference.sh` to set your parameters:
    ```bash
    # Model Settings
-   MODEL_PATH="/home/debonaire/h-proj/models/best_ensemble_model.pth"
+   MODEL_PATH="/home/.../models/best_ensemble_model.pth"
    USE_GPU=true
    
    # Image Processing
@@ -88,13 +88,13 @@ h-proj/
    THRESHOLD=0.2
    
    # Input/Output
-   INPUT_FILE="/home/debonaire/h-proj/data/processed/image_9.png"
+   INPUT_FILE="/home/.../data/processed/image_9.png"
    OUTPUT_DIR="results"
    ```
 
 2. **Run inference**:
    ```bash
-   cd /home/debonaire/h-proj
+   cd /home/.../
    chmod +x scripts/run_inference.sh
    ./scripts/run_inference.sh
    ```
@@ -104,7 +104,7 @@ h-proj/
 ```bash
 python scripts/inference.py \
     --image /path/to/el/image.png \
-    --model /home/debonaire/h-proj/models/best_ensemble_model.pth \
+    --model /home/.../models/best_ensemble_model.pth \
     --output results/ \
     --gpu true \
     --size 224 \
@@ -192,7 +192,7 @@ For questions or issues related to this solar panel EL image analysis system, pl
 
 ## Credits
 
-**Codebase Creator**: Harini
+**Codebase Creator**: Harini Iyar
 **Project**: Solar Panel Electroluminescence (EL) Image Analysis  
 **Date**: July 2025
 
