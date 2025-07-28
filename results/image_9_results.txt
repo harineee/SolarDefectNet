@@ -1,0 +1,6 @@
+Physics Model Prediction: 0.9007
+ResNet Model Prediction: 1.3446
+Ensemble Prediction: 0.8933
+Power Loss: 0.1067
+Relative Power: 0.8933
+Inactive Pixel %: 0.9007
