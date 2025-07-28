@@ -116,7 +116,7 @@ def run_inference(args):
             f.write(f"Ensemble Prediction: {final_pred:.4f}\n")
             f.write(f"Power Loss: {power_loss:.4f}\n")
             f.write(f"Relative Power: {final_pred:.4f}\n")
-            f.write(f"Inactive Pixel %: {pred_physics:.4f}\n")
+            f.write(f"Inactive Pixel Portion: {pred_physics:.4f}\n")
             
         return {
             "physics_pred": pred_physics,
