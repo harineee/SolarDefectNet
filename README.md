@@ -4,9 +4,13 @@
 
 This project implements an ensemble machine learning system for analyzing electroluminescence (EL) images of solar panels to predict power loss and assess panel health. The system combines a physics-based model with a deep learning ResNet model to provide accurate predictions of solar panel performance.
 
-## Citations 
+## Dataset
 
-This project was implemented and trained on the ELPV dataset which is publically available at https://data.fz-juelich.de/dataset.xhtml?persistentId=doi:10.26165/JUELICH-DATA/TVWUUP
+This project uses the [ELPV dataset](https://data.fz-juelich.de/dataset.xhtml?persistentId=doi:10.26165/JUELICH-DATA/TVWUUP), 
+released under the [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). 
+Please download it directly from the official source.
+
+We do not host the dataset files in this repository to respect bandwidth, license, and size limitations.
 
 ## Project Structure
 
