@@ -103,7 +103,6 @@ def run_inference(args):
         print(f"   Ensemble Prediction: {final_pred:.4f}")
         print(f"   Power Loss: {power_loss:.4f}")
         print(f"   Relative Power: {final_pred:.4f}")
-        print(f"   Inactive Pixel %: {pred_physics:.4f}")
         
         # Save results
         os.makedirs(args.output, exist_ok=True)
@@ -116,15 +115,13 @@ def run_inference(args):
             f.write(f"Ensemble Prediction: {final_pred:.4f}\n")
             f.write(f"Power Loss: {power_loss:.4f}\n")
             f.write(f"Relative Power: {final_pred:.4f}\n")
-            f.write(f"Inactive Pixel Portion: {pred_physics:.4f}\n")
             
         return {
             "physics_pred": pred_physics,
             "resnet_pred": pred_resnet,
             "ensemble_pred": final_pred,
             "power_loss": power_loss,
-            "relative_power": final_pred,
-            "inactive_pct": pred_physics
+            "relative_power": final_pred
         }
             
     except Exception as e:
